@@ -1,0 +1,317 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+  body{  
+  font-family: "Open Sans", sans-serif;
+}
+
+    h1,
+    h2,
+    h3{
+        font-family: "Raleway", sans-serif; 
+    }
+
+    header,
+    footer,
+    section{
+        padding: 30px;
+    }
+
+
+
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+body{
+    padding: 30px;
+}
+section{
+    text-align: center;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#main-logo{
+
+}
+
+
+
+
+header a{
+ padding: 10px 15px;
+ font-family: "Raleway", sans-serif;
+ font-weight: 500;
+}
+
+header a:hover{
+    background-color:hsl(224, 93%, 58%);
+}
+
+
+#main-logo{
+    height: 27px;
+}
+nav a{
+    margin-left: 17px;
+.section-text{
+    text-align: center;
+}
+
+
+
+}
+.section-image img{
+    width: 100%;
+}
+.intro h1{
+    font-size: 34px;
+    line-height: 45px;
+}
+
+.intro p{
+    margin:12px 0px;
+}
+
+
+
+.cta-form input{
+    display: block;
+    width: 100%;
+    padding:12px 18px;
+    border-radius: 4px;
+    transition: all 0.4s ease;
+}
+/* states:hover,active  */
+.cta-form input[type="text"]{
+    margin: 12px 0px;
+    
+   
+    .cta-form input[type="text"]:focus{
+        outline: none;
+        border-color: hsl(224, 93%, 58%);
+    }
+
+
+}
+.cta-form input[type="submit"]{
+    background-color:hsl(224, 93%, 58%);
+    color: white;
+    border: none;
+}
+.cta-form input[type="submit"]:hover{
+    box-shadow: 0px 0px 5px hsl(224, 93%, 58%);
+}
+
+.wherever-you-are{
+    background-color: hsl(240, 75%, 98%);
+}
+ #curved-bg mobile img{ 
+    width: 100%;
+     display: block; 
+}
+
+.curved-bg desktop{
+    display: block;
+}
+
+.wherever-you-are h2{
+    font-size: 18px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.wherever-you-are p{
+    text-align: center;
+    color: hsl(238, 22%, 44%);
+}
+
+.wherever-you-are .section-text a{
+text-align: center;
+color: hsl(170, 45%, 43%);
+text-decoration: underline;
+text-underline-offset: 7px;
+}
+
+.wherever-you-are .card{
+    background-color: white;
+    border-radius: 6px;
+    padding: 13px;
+    margin: 38px 15px;
+    text-align: left;
+    box-shadow: 0px 0px 16px lightgray;
+    font-size: 12px;
+
+}
+
+.wherever-you-are .card .profile{
+    display: flex;
+    align-items: start;
+    gap: 11px;
+    margin-top: 16px;
+}
+
+
+
+.wherever-you-are .card .profile img{
+    border-radius: 50%;
+    height: 35px;
+}
+
+.wherever-you-are .card .profile span:first-child{
+    font-weight: bold;
+    display: block;
+    color: black;
+    font-size: 15px;
+}
+
+.wherever-you-are .card .profile span:last-child{
+    font-size: 9px;
+    display: block;
+}
+
+.early-access{
+background-color: hsl(238, 22%, 44%);
+color: white;
+}
+.early-access h2{
+    font-size: 18px;
+    margin: 14px 0px;
+}
+
+.early-access p{
+    margin: 15px 0px;
+}
+
+.early-access .section-form input,
+.early-access .section-form button{
+    display: block;
+    width: 80%;
+    padding:12px 18px;
+    margin: 5px auto;
+    border-radius: 4px;
+    transition: all 0.4s ease; 
+}
+
+.early-access .section-form input{
+    border: none;
+
+}
+.early-access .section-form input:focus{
+    border: none;
+    outline: none;
+}
+.early-access .section-form button{
+    background-color: hsl(224, 93%, 58%);
+    color: white;
+    border: none;
+}
+
+.early-access .section-form button:hover{
+    box-shadow: 0px 0px 5px hsl(224, 93%, 58%);
+}
+footer{
+    background-color: hsl(243, 87%, 12%);
+    color: white;
+}
+
+footer .links{
+    margin: 30px 0;
+}
+footer.links a{
+    display: block;
+    margin: 12px 0;
+}
+footer .socials{
+    width: fit-content;
+    margin: 10px auto;
+}
+
+.attribution{
+    text-align: center;
+}
+
+.attribution a{
+    color: red;
+}
+
+
+@media  screen and(min-width:750px){
+    .intro{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+  .cta-form{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .cta-form input[type="text"]{
+    width: 65%;
+  }
+  .cta-form input[type="submit"] {
+    width: 3;
+  }
+
+  #curved-bg desktop{
+    display: block;
+}
+
+#curved-bg-desktop img{
+    width: 100%;
+    display: block;
+}
+
+.curved-bg-mobile{
+    display: none;
+}
+
+.wherever-you-are{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 40px;
+}
+
+.wherever-you-are .card{
+    width: 60%;
+}
+.section-text{
+    text-align: center;
+}
+.early-access{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+.early-access > *{
+    flex: 1;
+}
+.early-access .section-form submit 
+.early-access .section-form button{
+    margin:20px;
+}
+.early-access .section-form button{
+    width: fit-content;
+}
+
+.footer-flex > div {
+    flex: 1;
+}
+
+
+}
+    
+
